@@ -3,9 +3,6 @@
 .DS_Store
 .rvmrc
 .vagrant
-Vagrantfile
-cookbooks/custom/
-cookbooks/default/git/files/default/.gitconfig
 crash.log
 iso/
 output-*/
