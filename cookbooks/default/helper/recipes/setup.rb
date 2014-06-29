@@ -98,13 +98,13 @@ class ::Chef
 
     class ZshFile < UserCookbookFile
       def initialize(name, run_context=nil)
-        super(::File.join('.zsh', "#{name}.zsh"), run_context)
+        super(::File.join('.zshrc.d', "#{name}.zsh"), run_context)
       end
     end
 
     class ZshTemplate < UserTemplate
       def initialize(name, run_context=nil)
-        super(::File.join('.zsh', "#{name}.zsh"), run_context)
+        super(::File.join('.zshrc.d', "#{name}.zsh"), run_context)
         owner(Helper.user)
       end
     end
