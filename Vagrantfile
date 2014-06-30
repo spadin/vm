@@ -31,10 +31,11 @@ Vagrant.configure('2') do |config|
 
     # Custom recipes
     chef.add_recipe('tmux::install')
-    chef.add_recipe('vim::install')
     chef.add_recipe('homeshick::install')
     chef.add_recipe('homeshick::setup')
     chef.add_recipe('ssh::setup')
+    chef.add_recipe('vim::install')
+    chef.add_recipe('vim::setup')
 
     # Datastores
     chef.add_recipe('postgres::install')
