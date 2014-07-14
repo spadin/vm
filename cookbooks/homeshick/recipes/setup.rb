@@ -12,7 +12,7 @@ end
 
 user_bash 'fix spadin/dotfiles remote' do
   code <<-EOF
-    cd .homesick/repos/dotfiles
+    cd /home/vagrant/.homesick/repos/dotfiles
     git remote rm origin
     git remote add origin git@github.com:spadin/dotfiles.git
   EOF
