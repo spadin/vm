@@ -1,3 +1,2 @@
-%w(sqlite3 libsqlite3-dev).each do |p|
-  apt_package p
-end
+apt_package 'sqlite3'
+apt_package 'libsqlite3-dev'
