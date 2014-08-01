@@ -10,6 +10,7 @@ Vagrant.configure('2') do |config|
 
   # forward guest port to access your web application
   config.vm.network :forwarded_port, host: 2223, guest: 22
+  config.vm.network :forwarded_port, host: 3333, guest: 3000
 
   config.ssh.forward_agent    = true
   config.ssh.private_key_path = 'packer/keys/vm'
